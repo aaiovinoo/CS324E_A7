@@ -2,6 +2,7 @@ class Cone {
   float xpos, ypos;
   PShape vector;
   int speed; 
+  Contents = int[5];
   
   Cone() {}
   Cone(float xpos, float ypos, int speed){
