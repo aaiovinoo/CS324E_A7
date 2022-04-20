@@ -44,7 +44,7 @@ class Scoop{
     PVector collisionPoint = new PVector(cone.xpos+30,cone.ypos+10 - (levelOnStack*30+10));
     PVector bottom = new PVector (position.x+50,position.y+70);
     //ellipse(bottom.x,bottom.y,10,10);
-    if (dist(collisionPoint.x,collisionPoint.y,bottom.x,bottom.y)<15){
+    if (dist(collisionPoint.x,collisionPoint.y,bottom.x,bottom.y)<10){
       caught = true;
       //upping the contents;
       levelOnStack = cone.numScoops;
