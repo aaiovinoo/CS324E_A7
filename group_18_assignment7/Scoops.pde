@@ -11,7 +11,7 @@ class Scoops{
      //String[] flavors = new String[]{"mint"};
      
      for (int i=0; i<shapes.length; i++){
-        String source = "res/" + flavors[i] + ".svg";
+        String source = flavors[i] + ".svg";
         shapes[i] = loadShape(source);
         Scoop scoop = new Scoop(i,shapes[i]);
         scoopList.add(scoop);
