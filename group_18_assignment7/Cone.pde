@@ -22,6 +22,8 @@ class Cone {
     }
     
   } 
+  boolean submit(//pass object curscoops) { 
+  //return curscoops.array.len > 5 
   
   void keyPressed() {
     if (key == CODED) {
