@@ -22,8 +22,8 @@ class Cone {
     }
     
   } 
-  boolean submit(curscoops) { 
-   return curscoops.scoopstack.len > 5 
+  boolean submit(Scoops curscoops) { 
+   return curscoops.scoopstack.len > 5;
   }
   
   void keyPressed() {
