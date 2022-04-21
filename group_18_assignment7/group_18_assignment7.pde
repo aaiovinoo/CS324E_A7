@@ -2,6 +2,7 @@ color sky = color(124,185,232);
 Scoops scoops = new Scoops();
 Cone cone;
 PImage coneImg;
+Boolean shouldscore;
 
 void setup(){
   size(400,800);
@@ -16,4 +17,5 @@ void draw(){
   cone.drawcone();
   scoops.display();
   cone.keyPressed();
+  shoudldscore = cone.submit(scoops); 
 }
