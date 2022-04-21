@@ -23,17 +23,35 @@ class Scoreboard{
      textAlign(CENTER,CENTER);
      text(points,w/2,h/2-5);
      
+     String req = "";
+     for(int i:request){
+        req = req + " " + i; 
+     }
+     
+     text(req,w/2,h/2+100);
+     
  }
  
- void upScore(Cone cone){
-    points += cone.submit(request); 
+ void upScore(Scoops sc, Cone cone){
+   Boolean correct = true;
+    for(int i = 0; i < sc.scoopstack.size(); i++){
+        if (sc.scoopstack.get(i).id != request[i]){
+          correct = false;
+        }
+    }
+    
+    if(correct){
+      points++;
+      for (int i : request){
+        request[i] = int(random(scoops.shapes.length));
+      }
+    }
+    
+     sc.scoopstack.clear();
  }
  
  void main(Cone cone){
-     if (cone.isFull() && cone.contents != request){
-         lives--;
-         cone.empty();
-     }
+     
      
      if (lives == 0){
         noLoop();
