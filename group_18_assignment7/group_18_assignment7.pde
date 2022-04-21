@@ -3,7 +3,7 @@ Scoops scoops = new Scoops();
 Cone cone;
 PImage coneImg;
 Boolean shouldscore = false;
-Scoreboard score;
+Scoreboard score = new Scoreboard();
 
 void setup(){
   size(400,800);
@@ -23,4 +23,6 @@ void draw(){
   if (shouldscore){
     score.upScore(scoops, cone);
   }
+  
+  //noLoop();
 }

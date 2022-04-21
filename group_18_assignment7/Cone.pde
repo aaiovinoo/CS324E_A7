@@ -15,8 +15,8 @@ class Cone {
     image(coneImg, xpos, ypos,60,100);
     
     // abi changed this part because the cone was going off screen
-    if (xpos >width) { 
-      xpos = width;
+    if (xpos >width-60) { 
+      xpos = width-60;
     } else if (xpos < 0){
       xpos = 0;
     }
